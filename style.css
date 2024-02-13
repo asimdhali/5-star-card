@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@200;300;400;500;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    text-wrap: balance;
+}
+
+p {
+    text-wrap: pretty;
+}
+
+body {
+    height: 100dvh;
+    background-color: #121417;
+}
+
+main {
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+
+
+.container {
+    width: 400px;
+    background-image: linear-gradient(180deg,
+            hsl(215deg 20% 17%) 0%,
+            hsl(215deg 20% 16%) 11%,
+            hsl(215deg 21% 16%) 18%,
+            hsl(215deg 21% 16%) 24%,
+            hsl(215deg 22% 15%) 29%,
+            hsl(215deg 22% 15%) 34%,
+            hsl(215deg 23% 15%) 39%,
+            hsl(215deg 23% 14%) 44%,
+            hsl(215deg 24% 14%) 49%,
+            hsl(215deg 24% 14%) 54%,
+            hsl(215deg 25% 14%) 60%,
+            hsl(215deg 25% 13%) 66%,
+            hsl(215deg 26% 13%) 74%,
+            hsl(215deg 26% 13%) 84%,
+            hsl(215deg 27% 12%) 100%);
+    padding: 30px;
+    border-radius: 16px;
+}
+
+.star {
+    border-radius: 50%;
+    background-color: hsl(213, 18%, 22%);
+    padding: 14px;
+    margin-bottom: 16px;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 14px;
+    color: hsl(216, 12%, 54%);
+    font-weight: 500;
+}
+.principal--text{
+    margin-bottom: 20px;
+}
+.principal--buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+}
+.number{
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    padding: 16px;
+    background-color: hsl(213, 18%, 22%);
+    display: grid;
+    place-content: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    color: hsl(216, 12%, 54%);
+    font-size: 16px;
+    font-weight: 600;
+    text-align: center;
+    transition: all .2s ease-in-out;
+
+    &:hover{
+        background-color: hsl(217, 12%, 63%);
+        color: hsl(0, 0%, 100%);
+    }
+
+}
+
+.button{
+    width: 100%;
+    border: none;
+    border-radius: 24px;
+    padding: 12px;
+    background-color: hsl(25, 97%, 53%);
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: all .1s ease-in-out;
+
+    &:hover{
+        background-color: hsl(0, 0%, 100%);
+        color: hsl(25, 97%, 53%);
+    }
+}
+.thanks{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.thanks--img{
+    width: 150px;
+    margin-top: 16px;
+    margin-bottom: 30px;
+}
+.thanks--votation{
+    background-color: hsl(212, 18%, 19%);
+    padding: 6px 12px;
+    border-radius: 16px;
+    color: #fa822d;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+.thanks--text{
+    text-align: center;
+}
+.voteResult{
+    color: #fa822d;
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.hidden{
+    display: none;
+}
+.orange{
+    background-color: #fa822d;
+    color: white;
+
+    &:hover{
+        background-color: #fa822d;
+        color: white;    
+    }
+}
+
+@media (max-width: 420px) {
+    .container{
+        max-width: 300px;
+    }
+    .number{
+        width: 35px;
+        height: 35px;
+    }
+}
